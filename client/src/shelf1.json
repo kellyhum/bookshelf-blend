@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "title": "Harry Potter and the Philosopher's Stone",
+            "author": "JK Rowling",
+            "pages": 123,
+            "genre": "fantasy"
+        },
+        {
+            "title": "Percy Jackson and the Lightning Thief",
+            "author": "Rick Riordan",
+            "pages": 345,
+            "genre": "fantasy"
+        }
+    ]
+}
