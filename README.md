@@ -1,7 +1,8 @@
 # bookshelf blend
 
-work in progress
+> a tool that calculates the similarity percentage between you and a friend (+ other stats)
 
-may 24th update:
+#### lessons learned while building
 
--   force pushed backend, realized that my 60+ prior commits (was originally building just the frontend) got wiped out due to this :( a lesson learned
+-   force pushed a backend implementation onto the front end, didn't realize it would wipe out all the previous commits...
+-   reverted from the full backend express implementation to just frontend + firebase b/c i didn't need that much code for such simplistic usage
