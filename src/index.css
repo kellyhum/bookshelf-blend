@@ -1,12 +1,4 @@
 :root {
-    --dark: #121212;
-    --dark-lighter: #2e2e2e;
-    --light: #dad8d8;
-    --light-secondary: #b6b6b6;
-    --rose: #fbb4b4;
-}
-
-body[data-theme="light"] {
     --dark: #dad8d8;
     --dark-lighter: #b6b6b6;
     --light: #121212;
@@ -25,7 +17,7 @@ body,
 dialog {
     background-color: var(--dark);
     color: var(--light);
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 html,
@@ -63,9 +55,9 @@ nav {
 input[type="text"] {
     background-color: var(--dark-lighter);
     color: var(--light);
-    border-radius: 8px;
+    border-radius: 18px;
     border: none;
-    width: 30rem;
+    width: 100%;
     padding: 1rem;
     transition: all 0.1s;
 }
@@ -82,6 +74,7 @@ input[type="text"] {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
+    font-family: "Lora", serif;
 }
 
 img {
@@ -177,9 +170,11 @@ input[type="submit"] {
 }
 
 #search {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    width: 100%;
+}
+
+#search-icon {
+    position: absolute;
 }
 
 #search-results {
@@ -188,13 +183,22 @@ input[type="submit"] {
     width: 100%;
     background-color: var(--dark-lighter);
     border-radius: 8px;
+    z-index: 1;
 }
 
 .result {
     padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.result:hover {
+.search-results-number {
+    width: 5rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.search-results-number:hover {
     background-color: var(--rose);
     color: var(--dark);
     border-radius: 8px;
@@ -202,18 +206,9 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-#dark-mode-toggle {
-    width: 2.75rem;
-    height: 2.75rem;
+#search-results-bookshelf-selector {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-#dark-mode-toggle:hover {
-    border-radius: 8px;
-    background-color: var(--light);
-    color: var(--dark);
+    gap: 1rem;
+    width: 5rem;
+    justify-content: space-around;
 }
