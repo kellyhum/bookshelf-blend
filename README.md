@@ -2,6 +2,8 @@
 
 > a tool that calculates the similarity percentage between you and a friend (+ other stats)
 
+> currently a work in progress!
+
 #### todos
 
 -   figure out why test results don't show up (but are console.logged out)
