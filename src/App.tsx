@@ -36,9 +36,7 @@ function App() {
             <Nav />
             <Shelf
                 shelfTitle={
-                    titleModalForm.length > 0
-                        ? titleModalForm
-                        : "Default Bookshelf"
+                    titleModalForm.length > 0 ? titleModalForm : "Your Shelf"
                 }
                 openModal={toggleModalOpen}
             />
